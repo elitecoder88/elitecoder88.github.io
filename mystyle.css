@@ -1,0 +1,179 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff8c00;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+}
+
+h3 {
+  color: #333;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  height: 350px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.project-name:hover {
+  color: #ff8c00;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-description {
+  display: none;
+  padding-top: 10px;
+}
+
+.project-card:hover .project-description {
+  display: block;
+}
+
+.project-image {
+  width: 300px;
+  height: 250px;
+  border-radius: 15px 50px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+}
+
+section p a {
+  color: #ff8c00; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section p a:hover {
+  text-decoration: underline; 
+}
+
+/*  */
+
+/* Styles for desktop */
+@media screen and (min-width: 992px) {
+  .iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iframe-container iframe {
+    border: none;
+  }
+
+  .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .sport-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255, 140, 0, 0.5); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  }
+
+  .sport-image:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(255, 140, 0, 0.7);
+  }
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+  .iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust height for mobile */
+  }
+
+  .iframe-container iframe {
+    border: none;
+  }
+
+  .image-gallery {
+    display: flex;
+    flex-direction: column; /* Stack images vertically on mobile */
+    align-items: center;
+  }
+
+  .sport-image {
+    width: 80%; /* Adjust width for mobile */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255, 140, 0, 0.5); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    margin-bottom: 20px; /* Add spacing between images */
+  }
+
+  .sport-image:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(255, 140, 0, 0.7);
+  }
+}
